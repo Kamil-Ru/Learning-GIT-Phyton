@@ -5,28 +5,22 @@
 #   (A palindrome is a string that reads the same forwards and backwards.)
 #   
 
-
 name = input('Hello, whats is your name?\n')
-string = input('Please ' + name + ' enter any worlds: ')
+string = input('Please ' + name + ' write any word: ')
 string_array = []
 
 string = string.lower()
 
 for x in string:
     if x == ' ': continue
+    elif x == ',': continue
     else:
         string_array.append(x)
 
-k = 0
-h = len(string_array)
+string_array_2 = list(string_array)
+string_array_2.reverse()
 
-print(len(string_array))
-
-for x in string_array:
-    if string.lower[x] == string.lower[-x]:
-        print(OK)
-
-
-
-print(string_array)
-print(string)
+if string_array == string_array_2:
+    print('The word is a palindrome !!!')
+else:
+    print('The word is NOT a palindrome !!!')
