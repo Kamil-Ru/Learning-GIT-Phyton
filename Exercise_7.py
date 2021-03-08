@@ -13,7 +13,7 @@ a = [1, 4, 9, 16, 25, 36, 49, 64, 81, 100]
 b = []
 
 
-c = [x for x in a if x % 2 == 0]
+c = [x for x in a if x % 2 == 0] #List comprehensions
 print(c)
 
 for x in a:
