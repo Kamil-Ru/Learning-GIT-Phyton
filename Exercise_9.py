@@ -24,19 +24,19 @@ def game ():
     x = random.randint(1, 9)
     count = 0
     while True:
-          y = int(input('Pleas input number\n\n\n'))
+          y = int(input('Please input a number.\n\n\n'))
           if x == y: 
-              print('!!!EXACTLY RIGHT !!!\nGuesses the user has taken: ' + str(count))
+              print('!!! EXACTLY RIGHT !!!\nYou have guessed ' + str(count) + ' times.')
               break
           elif x < y: 
               count += 1
-              print('Your number is too high\n\n\n')
+              print('Your number is too high. Please try again.\n\n\n')
           elif x > y: 
-              print('Your number is too low\n\n\n')
+              print('Your number is too low. Please try again.\n\n\n')
               count += 1
 
 while True:
-    menu = input(print('MENU \nPleas type:\n1. New game\n2. Exit\n'))
+    menu = input(print('MENU \nPlease choose from the following:\n1. New game\n2. Exit\n'))
     if menu == '1':
         game()
     elif menu == '2':
