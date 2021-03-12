@@ -12,18 +12,15 @@ name = input("Hello, what is your name? ")
 number = int(input('Hello ' + name + '. Please enter a number: ' ))
 
 # Checking the number
-a = number % 2
 
-if a == 0:
+if number % 2 == 0:
     print (name + ' number ' + str(number) + ' is even.')
 else:
     print (name + ' number ' + str(number) + ' is odd.')
 
 # If the number is a multiple of 4, print out a different message.
 
-b = number % 4
-
-if b == 0:
+if number % 4 == 0:
     print (name + ' number ' + str(number) + ' is a multiple of 4.')
 else:
     print (name + ' number ' + str(number) + ' is not a multiple of 4.')
@@ -37,9 +34,7 @@ else:
 number_1 = int(input(name + 'Enter a frist number: ' ))
 number_2 = int(input(name + 'Enter a secend number: ' ))
 
-c = number_1 % number_2
-
-if c == 0:
+if number_1 % number_2 == 0:
     print (name + ' number ' + str(number_1) + ' is a multiple of ' + str(number_2) + '.')
 else:
     print (name + ' number ' + str(number_1) + ' is not a multiple of ' + str(number_2) + '.')
