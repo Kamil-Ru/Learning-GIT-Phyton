@@ -36,11 +36,13 @@ print(c)
 #   from the original list a that are smaller than that number given by the user.
 
 number = int(input('Please, enter the number: '))
-c = []
-for element in a:
-    if element < number:
-        c.append(element)
+d = [x for x in a if x < number]
+# c = []
+# for element in a:
+#     if element < number:
+#         c.append(element)
 print(c)
+print(d)
 
 
 
