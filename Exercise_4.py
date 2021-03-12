@@ -13,8 +13,10 @@ for elem in range(1,a + 1):
     b = a % elem
     if b == 0:
         c.append(elem)
+
+d = [x for x in range(1,a+1) if a%x==0]
 #c.append(a)
 
 print ('List all the divisors number ' + str(a) + ' is: ' + str(c))
 
-d = input()
+print(d)

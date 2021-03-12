@@ -16,18 +16,22 @@
 
 a = [1, 1, 2, 3, 5, 8, 0, 21, 34, 55, 89, 100, 50, 200, 13, 13, 13, 125, 1000]
 b = [1000, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 125]
-c = []
+# c = []
 
-for x in a:
-    if x in b:
-        if x not in c:
-            c.append(x)
+# for x in a:
+#     if x in b:
+#         if x not in c:
+#             c.append(x)
 
-print('Answer for exercise 5 = '+ str(c))
+d = list(set([x for x in a if x in b]))
+list.sort(d)
+# print('Answer for exercise 5 = '+ str(c))
+print('Answer for exercise 5 = '+ str(d))
 
 a.clear()
 b.clear()
-c.clear()
+# c.clear()
+d.clear()
 
 #   Extras 1
 
