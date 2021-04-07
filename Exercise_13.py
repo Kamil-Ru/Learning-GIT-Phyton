@@ -25,6 +25,13 @@ def fibonnaci_number(x):
             c.append(k)
         return c
         
+while True:
+    try:
+        number = int(input('Enter the number of numbers in the sequence to generate:  '))
+        break
+    except:
+        print('Enter the number!!!')
+        continue
+        
+print(fibonnaci_number(number))
 
-c = fibonnaci_number(10)
-print(c)        
