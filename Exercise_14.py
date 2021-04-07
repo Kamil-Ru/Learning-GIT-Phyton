@@ -1,5 +1,6 @@
 #   Exercise 14
-#   Write a program (function!) that takes a list and returns a new list that contains all the elements of the first list minus all the duplicates.
+#   Write a program (function!) that takes a list and returns a new list 
+#   that contains all the elements of the first list minus all the duplicates.
 
 #   Extras:
 
@@ -17,8 +18,7 @@
 
 
 a = [1, 1, 1, 2, 2, 2, 5, 5, 10, 11, 10]
-c = a
-e = a
+
 
 # for i in c:
 #     k = 0
@@ -27,19 +27,27 @@ e = a
 #             c.remove(c[i])
 #     k += 1
 
-for i in c:
-    for j in c:
-        if c[i] == c[j]:
-            print(c[i])
-
-
-
-
-print(c)
-
-
-
-
-
+def function_list(x):
+    
+    y = []
+    
+    for i in x:
+        
+        if i in y:
+            continue
+                        
+        else:
+            y.append(i)
+    
+    return y
+        
+    
+c = function_list(a)
+    
 b = list(set(a))
+
+print(f'List: {a}')
+
 print('Using sets: ' + str(b))
+
+print(f'Using funtion: {c}')
